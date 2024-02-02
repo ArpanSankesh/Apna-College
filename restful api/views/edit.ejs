@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EJS Form Example</title>
+  </head>
+  <body>
+    <h1>EDIT YOUR POST</h1>
+    <p>Post id : <%= post.id %></p>
+    <p>Post username : <%= post.username %></p>
+
+    <form method="post" action="/post/<%=post.id%>?_method=PATCH">
+      <textarea rows="10" cols="100" name="content"><%= post.content %></textarea>
+
+      <button type="submit">SUBMIT</button>
+    </form>
+  </body>
+</html>
