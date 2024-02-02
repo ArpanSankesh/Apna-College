@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1{
+    padding: 40px;
+}
+p{
+    padding: 40px;
+
+}
+button{
+    padding: 20px 40px;
+    background-color: #252525;
+    color: #fff;
+}
