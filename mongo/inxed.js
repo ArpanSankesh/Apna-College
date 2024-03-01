@@ -10,9 +10,22 @@ async function main(){
 }
 
 const userSchema = new mongoose.Schema({
-    user: String,
+    user: String, 
     email:String,
     age: Number 
 });
 
-const user = mongoose.model("user", userSchema)
+const user = mongoose.model("user", userSchema);
+
+const user1 = new user({
+    name:"Adam",
+    email:"adam@gmail.com",
+    age:"18"
+})
+
+user1.save().then((res) => {
+    console.log(res);
+})
+.catch((err) => {
+    console.log(err);
+});
